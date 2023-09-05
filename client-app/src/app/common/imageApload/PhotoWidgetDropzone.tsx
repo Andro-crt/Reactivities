@@ -1,7 +1,7 @@
 import React, {useCallback} from 'react'
 import {useDropzone} from 'react-dropzone'
 import { Header, Icon } from 'semantic-ui-react';
-import { setEmitFlags } from 'typescript';
+
 
 interface Props{
     setFile :(file:any) => void;

@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-
 import { Grid } from "semantic-ui-react";
 import Profileheader from "./profileHeader";
 import ProfileContent from "./ProfileContent";

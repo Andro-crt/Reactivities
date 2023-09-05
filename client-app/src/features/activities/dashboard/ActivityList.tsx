@@ -9,7 +9,7 @@ export default observer(function ActivityList(){
 
     const {activityStore} = useStore();
     const {groupedActivities } = activityStore;
-    const[target,setTarget] = useState('');
+    const[] = useState('');
 
     return(
         <>

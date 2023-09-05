@@ -1,12 +1,10 @@
 import { observer } from "mobx-react-lite";
-import { Interface } from "readline";
 import { Button, Card, Grid, Header, Image, Tab } from "semantic-ui-react";
 import { Photo, Profile } from "../../app/models/profile";
-import { promises } from "dns";
 import { useStore } from "../../app/stores/store";
 import { SyntheticEvent, useState } from "react";
 import PhotoUploadWidget from "../../app/common/imageApload/PhotoUploadWidget";
-import { id } from "date-fns/locale";
+
 
 
 
@@ -14,7 +12,7 @@ import { id } from "date-fns/locale";
 interface Props {
     profile: Profile;
 }
-export default observer(function profileProfile({ profile }: Props) {
+export default observer(function ProfileProfile({ profile }: Props) {
     const { profileStore: { isCurrentUser, uploadphoto, uploading, loading, setMainPhoto, deletePhoto } } = useStore();
     const [addPhotoMode, setPhotoMode] = useState(false);
     const [target, setTarget] = useState('')
@@ -68,9 +66,6 @@ export default observer(function profileProfile({ profile }: Props) {
                                                 name={photo.id}
                                             />
                                         </Button.Group>
-
-
-
                                     )}
                                 </Card>
                             ))}
